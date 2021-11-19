@@ -1,0 +1,34 @@
+/*--------------------------------------------------------------
+# Colour Scheme
+--------------------------------------------------------------*/
+$colour-bg: #EAE0D5;
+$colour-text: #0A0908;
+$colour-bar-background: #C6AC8F;
+$colour-bar-background-2: #C6AC8F;
+$colour-bar-fill: #5E503F;
+$colour-bar-fill-2: #5E503F;
+$colour-indicator: #22333B;
+$colour-label: #22333B;
+
+/*--------------------------------------------------------------
+# Structure
+--------------------------------------------------------------*/
+// Global padding size
+$padding-container: 2rem;
+
+// Width of centred content on desktop screens
+$centred-content-width: 1000px;
+
+/*--------------------------------------------------------------
+# Break Points
+--------------------------------------------------------------*/
+$max-sm: 607px;
+$sm: 38em; // 608px
+$max-md: 991px;
+$md: 62em; // 992px
+$max-lg: 1199px;
+$lg: 75em; // 1200px
+$max-xl: 1399px;
+$xl: 87.5em; // 1400px
+$max-xxl: 1791px;
+$xxl: 112em; // 1792px
