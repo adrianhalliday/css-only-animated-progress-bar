@@ -111,6 +111,14 @@
 		color: $colour-label;
 		animation: progress-bar .8s ease .3s forwards;
 	}
+
+	&--percentage {
+		counter-reset: percentage var(--percentage-completed);
+
+		&:before {
+			content: counter(percentage);
+		}
+	}
 }
 
 @keyframes progress-bar {
@@ -132,3 +140,24 @@
 		left: Min(calc(100% - 11ch), calc(1% * var(--percentage-completed)))
 	}
 }
+
+/* 
+@property --num {
+	syntax: '<integer>';
+	initial-value: 0;
+	inherits: false;
+}
+
+div {
+	transition: --num 1s;
+	counter-reset: num var(--num);
+}
+
+div:hover {
+	--num: 10000;
+}
+
+div::after {
+	content: counter(num);
+}
+*/
